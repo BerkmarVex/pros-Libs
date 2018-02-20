@@ -58,3 +58,4 @@ dkms.conf
 ProjectSettings.json
 *.suo
 slnx.sqlite
+*.bin
