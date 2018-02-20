@@ -25,9 +25,9 @@ extern "C" {
 
 	void setDeadZone(int input);
 
-	int joyDualZoneDrive(int inputVal, int zone, double lowScalar, double highScalar);
+	int joyDualZoneDrive(int inputVal, int zone, double lowScalar, double highScalar, bool is_reversed);
 
-	int joyExpDrive(int inputVal, double scalar);
+	int joyExpDrive(int inputVal, double scalar, bool is_reversed);
 
 	// End C++ export structure
 #ifdef __cplusplus
