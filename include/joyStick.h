@@ -1,4 +1,4 @@
-/** @file buttons.h
+/** @file joystick.h
 * @brief Header file for global joyStick functions
 *
 * Any experienced C or C++ programmer knows the importance of header files. For those who
@@ -18,6 +18,9 @@
 #include <stdlib.h>
 #include <math.h>
 
+//allows the uses of pros functions
+#include <main.h>
+
 // Allow usage of this file in C++ programs
 #ifdef __cplusplus
 extern "C" {
@@ -25,9 +28,9 @@ extern "C" {
 
 	void setDeadZone(int input);
 
-	int joyDualZoneDrive(int inputVal, int zone, double lowScalar, double highScalar, bool is_reversed);
+	int joyDualZoneDrive(int inputVal, int zone, double lowScalar, double highScalar, bool reversed);
 
-	int joyExpDrive(int inputVal, double scalar, bool is_reversed);
+	int joyExpDrive(int inputVal, double scalar, bool reversed);
 
 	// End C++ export structure
 #ifdef __cplusplus
